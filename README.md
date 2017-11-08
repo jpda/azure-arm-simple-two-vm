@@ -1,2 +1,16 @@
 # azure-arm-simple-two-vm
-Creates two VMs, one Windows, one Ubuntu, in a single VNet in a resource group
+Born from a need for quick HOL VMs for customer visits
+
+# What's in here
+## [linux-win.template.json](linux-win.template.json)
+- Azure ARM template for deploying two VMs
+- Windows Server 2016 Datacenter
+- Ubuntu 16.04
+- Single virtual network for both
+- NSGs for each, 3389 for Windows, 22 for Ubuntu
+- Auto-shutdown rules for 7p UTC
+
+## [deployer.ps1](deployer.ps1)
+- Powershell deployment script
+- Takes an array of prefixes
+- Those prefixes become the root of the resource names
