@@ -14,3 +14,5 @@ Born from a need for quick HOL VMs for customer visits
 - Powershell deployment script
 - Takes an array of prefixes
 - Those prefixes become the root of the resource names
+- Intended usage: `deployer.ps1 -prefixes user,initials,or,some,other,id
+- Each item in the list will create a new deployment + resource group
